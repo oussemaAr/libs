@@ -29,7 +29,7 @@ dependencies {
 
 publishing {
     publications {
-        maven(MavenPublication) {
+        release(MavenPublication) {
             groupId = 'tn.oussemaar'
             artifactId = 'aroua-data'
             version = '1.0'

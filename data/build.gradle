@@ -27,15 +27,15 @@ dependencies {
 
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'tn.oussemaar'
+            artifactId = 'aroua-data'
+            version = '1.0'
 
-                groupId = 'oussemaar'
-                artifactId = 'aroua-data'
-                version = '1.0.0'
+            afterEvaluate {
+                from components.release
             }
         }
     }
